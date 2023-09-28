@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log mux21_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_dataflow.tcl" );
+         "-log mux21_structural.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_structural.tcl" );
 
 
 

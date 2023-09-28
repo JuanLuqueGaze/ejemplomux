@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_dataflow.tcl"
+  variable script "C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_structural.tcl"
   variable category "vivado_synth"
 }
 
@@ -84,7 +84,12 @@ set_property ip_output_repo {c:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_dataflow.vhd}}
+read_vhdl -library xil_defaultlib {
+  {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/and_gate.vhd}
+  {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/not_gate.vhd}
+  {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/or_gate.vhd}
+  {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_structural.vhd}
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -98,10 +103,12 @@ read_xdc {{C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejem
 set_property used_in_implementation false [get_files {{C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/constrs_1/imports/Sistemas Electronicos/Basys-3-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/utils_1/imports/synth_1/mux21_dataflow.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top mux21_dataflow -part xc7a35tcpg236-1
+synth_design -top mux21_structural -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -111,10 +118,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef mux21_dataflow.dcp
+write_checkpoint -force -noxdef mux21_structural.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file mux21_dataflow_utilization_synth.rpt -pb mux21_dataflow_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file mux21_structural_utilization_synth.rpt -pb mux21_structural_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

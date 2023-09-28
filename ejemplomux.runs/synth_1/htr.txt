@@ -7,4 +7,4 @@ REM Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 REM Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 REM
 
-vivado -log mux21_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_dataflow.tcl
+vivado -log mux21_structural.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_structural.tcl
