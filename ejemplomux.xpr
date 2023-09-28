@@ -90,8 +90,15 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/mux21_behavioral.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/and_gate.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/and_gate.vhd"/>
           <Attr Name="ImportTime" Val="1695916563"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,6 +107,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/not_gate.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/not_gate.vhd"/>
           <Attr Name="ImportTime" Val="1695916604"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -108,6 +116,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/or_gate.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/or_gate.vhd"/>
           <Attr Name="ImportTime" Val="1695916602"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -116,6 +125,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/mux21_structural.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -127,9 +137,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/mux21_mixed.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="mux21_structural"/>
+        <Option Name="TopModule" Val="mux21_behavioral"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
