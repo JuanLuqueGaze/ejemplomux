@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Sep 28 18:10:20 2023
+# Process ID: 15460
+# Current directory: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1
+# Command line: vivado.exe -log mux21_dataflow.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_dataflow.tcl
+# Log file: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_dataflow.vds
+# Journal file: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1\vivado.jou
+# Running On: DESKTOP-BQG6CJC, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16558 MB
+#-----------------------------------------------------------
+source mux21_dataflow.tcl -notrace
