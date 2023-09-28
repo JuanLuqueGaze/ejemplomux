@@ -3,45 +3,49 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Sep 28 18:30:20 2023
-# Process ID: 3892
+# Start of session at: Thu Sep 28 18:33:39 2023
+# Process ID: 17728
 # Current directory: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1
-# Command line: vivado.exe -log mux21_behavioral.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_behavioral.tcl
-# Log file: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_behavioral.vds
+# Command line: vivado.exe -log mux21_mixed.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux21_mixed.tcl
+# Log file: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_mixed.vds
 # Journal file: C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1\vivado.jou
 # Running On: DESKTOP-BQG6CJC, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16558 MB
 #-----------------------------------------------------------
-source mux21_behavioral.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 439.113 ; gain = 164.273
+source mux21_mixed.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 438.582 ; gain = 163.609
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/utils_1/imports/synth_1/mux21_dataflow.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/utils_1/imports/synth_1/mux21_dataflow.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top mux21_behavioral -part xc7a35tcpg236-1
+Command: synth_design -top mux21_mixed -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5836
+INFO: [Synth 8-7075] Helper process launched with PID 11820
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.781 ; gain = 408.387
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1254.379 ; gain = 410.547
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'mux21_behavioral' [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_behavioral.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'mux21_behavioral' (0#1) [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_behavioral.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'mux21_mixed' [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_mixed.vhd:41]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/and_gate.vhd:5' bound to instance 'and1' of component 'and_gate' [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_mixed.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/and_gate.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (0#1) [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/and_gate.vhd:11]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/imports/Downloads/and_gate.vhd:5' bound to instance 'and2' of component 'and_gate' [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_mixed.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'mux21_mixed' (0#1) [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/sources_1/new/mux21_mixed.vhd:41]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1342.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1342.797 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -96,43 +100,43 @@ WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/juanl_00e1ytj/OneD
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/constrs_1/imports/Sistemas Electronicos/Basys-3-Master.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/constrs_1/imports/Sistemas Electronicos/Basys-3-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/constrs_1/imports/Sistemas Electronicos/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mux21_behavioral_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/mux21_behavioral_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/constrs_1/imports/Sistemas Electronicos/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mux21_mixed_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mux21_mixed_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1342.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1342.797 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1342.637 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1342.797 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.srcs/utils_1/imports/synth_1/mux21_dataflow.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 
 
@@ -148,8 +152,6 @@ INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criter
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -167,25 +169,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1342.637 ; gain = 498.242
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1345.500 ; gain = 501.105
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1342.797 ; gain = 498.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -203,37 +205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -254,25 +256,25 @@ Report Cell Usage:
 |3     |OBUF |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.281 ; gain = 515.887
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.281 ; gain = 515.887
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1352.219 ; gain = 508.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1352.219 ; gain = 508.387
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1372.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.340 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1379.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1371.934 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 278e102f
+Synth Design complete | Checksum: ae4bb210
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 17 Warnings, 17 Critical Warnings and 0 Errors encountered.
+22 Infos, 17 Warnings, 17 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1379.148 ; gain = 915.195
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1371.934 ; gain = 908.488
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_behavioral.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file mux21_behavioral_utilization_synth.rpt -pb mux21_behavioral_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 28 18:31:03 2023...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/juanl_00e1ytj/OneDrive/Escritorio/Sistemas Electronicos/ejemplomux/ejemplomux.runs/synth_1/mux21_mixed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mux21_mixed_utilization_synth.rpt -pb mux21_mixed_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 28 18:34:20 2023...

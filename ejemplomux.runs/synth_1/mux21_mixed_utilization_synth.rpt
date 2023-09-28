@@ -1,10 +1,10 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Thu Sep 28 18:31:03 2023
+| Date         : Thu Sep 28 18:34:20 2023
 | Host         : DESKTOP-BQG6CJC running 64-bit major release  (build 9200)
-| Command      : report_utilization -file mux21_behavioral_utilization_synth.rpt -pb mux21_behavioral_utilization_synth.pb
-| Design       : mux21_behavioral
+| Command      : report_utilization -file mux21_mixed_utilization_synth.rpt -pb mux21_mixed_utilization_synth.pb
+| Design       : mux21_mixed
 | Device       : xc7a35tcpg236-1
 | Speed File   : -1
 | Design State : Synthesized
